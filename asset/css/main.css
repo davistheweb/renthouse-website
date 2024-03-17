@@ -2,10 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
+    --text-color: #085c11;
     --bg-color:#fff;
     --header-text-color:#033306;
     --nav-bg-color:#f0f0f0;
-    
+    --layout-bg-color:#0d4512;
 
 
     /* FONTS, FONT-SIZES, FONT-WEIGHTS AND TYPOGRAPHHY */
@@ -20,6 +21,9 @@
     --font-bold:700;
     --font-bolder:800;
     --font-boldest:900;
+
+    --mb-2-5: 2.5rem;
+    --pt-0-2: 1.5rem 0;
 }
 
 *{
@@ -36,6 +40,77 @@ body {
     /* padding: 0 7%; */
     background-color: var(--bg-color);
 }
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.home-container {
+    position: relative;
+    row-gap: 3em;
+}
+
+.home-intro {
+    position: relative;
+}
+
+.home-title {
+    color: var(--text-color);
+    font-size: 4.5rem;
+    font-family: var(--poppins-font);
+    font-weight: var(--font-smaller);
+    /* line-height: 110px; */
+}
+
+.home-subtitle {
+    padding: var(--pt-0-2);
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-family: var(--poppins-font);
+    font-weight: var(--font-regular);
+}
+
+.home-buttons {
+    gap: 1.5rem;
+    
+}
+
+.home__buttons {
+    display: flex;
+    width: 8.5rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    font-family: var(--poppins-font);
+    font-weight: var(--font-small);
+    font-size: 0.9rem;
+}
+
+.home__button-rent {
+    background-color: var(--layout-bg-color);
+    color: #fff;
+}
+
+.home__button-rent-place {
+    border: 1px solid var(--layout-bg-color);
+    color: var(--text-color);
+}
+
+.home-image {
+    padding: 1%;
+    margin-right: -5.5rem ;
+}
+
+.home-img {
+    width: 550px;
+    height: 540px;
+}
+
 
 .preloader {
     position: fixed;
@@ -106,6 +181,7 @@ body {
 .active {
     text-decoration: underline 1.5px;
 }
+
 
 /* HEADER BREAK_POINTS */
 
@@ -233,6 +309,57 @@ body {
     }
 
 
+}
+
+section {
+    padding: 0 7%;
+    padding-block: 7rem 1rem;
+}
+
+.home-container {
+    display: flex;
+}
+
+
+@media screen and (max-width: 380px) {
+
+    .home-container {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .home-title {
+        font-size: 1.5rem;
+        /* justify-content: center;
+        align-items: center;
+        display: flex; */
+        width: 75%;
+    }
+
+    .home-subtitle {
+        font-size: 1rem;
+        display: flex;
+        text-align: center;
+    }
+
+    .home-buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-image {
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -1rem;
+    }
+
+    .home-img {
+        width: 450px;
+        height: 380px;
+    }
 }
 
 
