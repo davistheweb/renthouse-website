@@ -49,7 +49,7 @@ if (navigator.connection) {
 
 /* SHOW HEADER BOX SHADOW*/
     
-    function headerScroll(){
+ /*    function headerScroll(){
         
         const header = document.querySelector('.header');
         header = (this.scrollY >= 50)? document.body.classList.add('show-header-box')
@@ -58,7 +58,7 @@ if (navigator.connection) {
 
     window.onscroll = headerScroll;
 
- 
+  */
 
     // NAVIGATION BAR! */
 
@@ -74,12 +74,27 @@ if (navigator.connection) {
     })
 
 
-    const closeNav = doucment.querySelectorAll('.nav-links')
+/*     const closeNav = document.querySelectorAll('.nav-links')
 
     close.foreach(link => {
         link.addEventListener('click', () => {
             document.body.classList.remove('open')
         })
-    })
+    }) */
+
+
+    /* THEME TOGGLE */
+
+    
+
+    const themeToggle = document.getElementById('theme-toggle')
+
+    function darkTheme() {
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle("letDark-theme-toggle")
+        })
+    }
+
+    darkTheme()
     
 //END!//
