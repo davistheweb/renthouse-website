@@ -87,14 +87,17 @@ if (navigator.connection) {
 
     
 
-    const themeToggle = document.getElementById('theme-toggle')
+    const themeToggle = document.getElementById('theme-toggle'),
+            themeIcon = document.getElementById('theme-icon')
 
-    function darkTheme() {
+   
         themeToggle.addEventListener('click', () => {
             document.body.classList.toggle("letDark-theme-toggle")
         })
-    }
 
-    darkTheme()
+        themeIcon.addEventListener('click', () => {
+            document.body.classList.toggle("change-theme-icon")
+        })
+    
     
 //END!//

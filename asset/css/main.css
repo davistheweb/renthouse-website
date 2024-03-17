@@ -142,9 +142,12 @@ body {
 
 /* LIGHT AND DARK TOGGLE */
 
-.theme__toogle {
+.theme__toogle,
+#theme-icon
+{
     position: relative;
 }
+
 
 .toogle__light,
 .toogle__dark 
@@ -157,10 +160,23 @@ body {
     cursor: pointer;
 }
 
+.toogle__light {
+    opacity: 0;
+    visibility: hidden;
+}
 
-/* .letDark-theme-toggle .toogle__dark {
+.change-theme-icon .toogle__light {
+    opacity: 1;
+    visibility: visible;
+    transform: rotate(-50deg);
+}
+
+
+.change-theme-icon .toogle__dark {
     transform: rotate(55deg);
-} */
+    opacity: 0;
+    visibility: hidden;
+}
 
 /* HEADER BREAK_POINTS */
 
@@ -569,7 +585,6 @@ section {
     
     .home__button-rent {
         background-color: var(--layout-bg-color);
-        color: #fff;
     }
     
     .home__button-rent-place {
@@ -654,7 +669,6 @@ section {
     
     .home__button-rent {
         background-color: var(--layout-bg-color);
-        color: #fff;
     }
     
     .home__button-rent-place {
