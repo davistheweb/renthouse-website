@@ -9,6 +9,7 @@
     --header-text-color:#033306;
     --nav-bg-color:#f0f0f0;
     --layout-bg-color:#0d4512;
+    --button-text-color:#fff;
 
 
     /* FONTS, FONT-SIZES, FONT-WEIGHTS AND TYPOGRAPHHY */
@@ -36,6 +37,7 @@
     --header-text-color:#fff;
     --nav-bg-color:#f0f0f0;
     --layout-bg-color:#fff;
+    --button-text-color:#0d4512;
 }
 
 *{
@@ -352,7 +354,7 @@ section {
 
 .home__button-rent {
     background-color: var(--layout-bg-color);
-    color: #fff;
+    color: var(--button-text-color);
 }
 
 .home__button-rent-place {
