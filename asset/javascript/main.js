@@ -56,7 +56,7 @@ if (navigator.connection) {
         : document.body.classList.remove('show-header-box');
     }
 
-    window.onscroll = headerScroll();
+    window.onscroll = headerScroll;
 
  
 
