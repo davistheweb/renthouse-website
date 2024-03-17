@@ -88,16 +88,16 @@ if (navigator.connection) {
     
 
     const themeToggle = document.getElementById('theme-toggle'),
-            themeIcon = document.getElementById('theme-icon')
+            themeIcon = document.getElementById('theme-icon');
 
    
         themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle("letDark-theme-toggle")
-        })
+            document.body.classList.toggle("letDark-theme-toggle");
+        });
 
         themeIcon.addEventListener('click', () => {
-            document.body.classList.toggle("change-theme-icon")
-        })
+            document.body.classList.toggle("change-theme-icon");
+        });
     
     
 //END!//
