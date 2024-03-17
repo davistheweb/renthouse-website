@@ -1,0 +1,248 @@
+/* FONTS! */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --bg-color:#fff;
+    --header-text-color:#033306;
+    --nav-bg-color:#f0f0f0;
+    
+
+
+    /* FONTS, FONT-SIZES, FONT-WEIGHTS AND TYPOGRAPHHY */
+    /*FONTS*/
+
+    --poppins-font: poppins;
+
+    /*FONT-WEIGHT*/
+    --font-smaller:400;
+    --font-small:500;
+    --font-regular:600;
+    --font-bold:700;
+    --font-bolder:800;
+    --font-boldest:900;
+}
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    transition: .5s ease;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    /* padding: 0 7%; */
+    background-color: var(--bg-color);
+}
+
+.preloader {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.8) url(../images/infinite-gif-preloader.gif) no-repeat center;
+    z-index: 100;
+    padding: 0 !important;
+    box-sizing: border-box;
+    margin: 0;
+    transition: all .5s ease-in;
+}
+
+.header { 
+    background-color: var(--bg-color);
+    padding:2% 7%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    z-index: 1;
+}
+/* .header {
+    padding: 2% 0;
+    justify-content: space-between;
+    position: fixed;
+} */
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--header-text-color);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.logo .home-text .material-symbols-outlined {
+    vertical-align: middle;
+}
+
+.home-text {
+    font-weight: var(--font-smaller);
+}
+
+.navbar {
+    position: relative;
+}
+
+.nav-list {
+    gap: 2rem;
+}
+
+.nav-links {
+    color: var(--header-text-color);
+    font-size: 18px;
+    font-weight: var(--font-bold);
+    cursor: pointer;
+}
+
+.nav-links:hover,
+.active {
+    text-decoration: underline 1.5px;
+}
+
+/* HEADER BREAK_POINTS */
+
+@media screen and (max-width: 920px) {
+
+   
+    .nav-list {
+        gap:1.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .header {
+        padding: 3% 3%;
+    }
+    .logo {
+        z-index: inherit;
+    }
+
+    .navbar {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-top: 10rem;
+        border-radius: 15px;
+        position: absolute;
+        background-color: pink;
+        width: 15%;
+        background-color: #033306;
+        opacity: 0;
+        display: none;
+        visibility: hidden;
+        transition:all .3s ease;
+        padding: 2% 0;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    .nav-list {
+        display: grid !important;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .mbnav-links {
+        display: flex;
+        padding: .2rem;
+        border-radius: 18px;
+        
+    }
+
+    .mbnav-links:hover,
+    .isactive
+    {
+        background-color: #fff;
+        padding: .2rem;
+        border-radius: 18px;
+        
+    }
+    .open .navbar {
+        transition: right .3s ease;
+        right: 3% !important;
+        top: 1.5%;
+        opacity: 1;
+        visibility: visible;
+        display: inherit;
+    }
+
+    .menu {
+        position: relative;
+        width: 35px;
+        height: 35px;
+    }
+
+    .menu_open,
+    .menu_close 
+    {   cursor: pointer;
+        position: absolute;
+        width: max-content;
+        height: max-content;
+        font-size: 1.5rem;
+        transition: opacity .3s, rotate .2s;
+    }
+
+    .menu_close {
+        opacity: 0;
+    }
+
+    .open-icon .menu_open {
+        transform: rotate(-75deg);
+        opacity: 0;
+    }
+
+    .open-icon .menu_close {
+        opacity: 1;
+    }
+
+    
+}
+
+@media screen and (max-width: 580px) {
+    .navbar {
+        position: fixed !important;
+        height: max-content;
+        width: max-content;
+        padding: 3.5% 5%;
+        right: 0;
+        left: 0;
+        justify-self: center !important;
+        bottom: 5%;
+        display: flex !important;
+        visibility: visible;
+        opacity: 2;
+    }
+
+    .nav-list {
+        display: flex !important;
+        gap: 1.5rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+}
+
+
+@media screen and (min-width: 767px) {
+
+    .menu,
+    .mbnav-links
+    {
+        display: none;
+    }
+
+}
+
