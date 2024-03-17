@@ -46,6 +46,18 @@ if (navigator.connection) {
     setTimeout(hideLoader, 2600);
 }
 
+
+/* SHOW HEADER BOX SHADOW*/
+    
+    function headerScroll(){
+        
+        const header = document.querySelector('.header');
+        header = (this.scrollY >= 50)? document.body.classList.add('show-header-box')
+        : document.body.classList.remove('show-header-box');
+    }
+
+    window.onscroll = headerScroll();
+
  
 
     // NAVIGATION BAR! */
