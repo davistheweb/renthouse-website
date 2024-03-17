@@ -214,8 +214,8 @@ body {
         height: max-content;
         width: max-content;
         padding: 3.5% 5%;
-        right: 0;
-        left: 0;
+        /* right: 0;
+        left: 0; */
         justify-self: center !important;
         bottom: 5%;
         display: flex !important;
