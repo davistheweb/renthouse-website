@@ -285,6 +285,10 @@ body {
         display: none;
     }
 
+    .theme__toogle {
+        margin-right: 3rem;
+    }
+
 
 }
 
