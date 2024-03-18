@@ -123,6 +123,7 @@ body {
 
 .navbar {
     position: relative;
+    margin-left: 19.5rem;
 }
 
 .nav-list {
@@ -193,9 +194,16 @@ body {
 
 /* HEADER BREAK_POINTS */
 
+@media screen and (max-width: 1180px) {
+    
+    .navbar {
+        margin-left: 10.5rem;
+    }
+}
+
 @media screen and (max-width: 920px) {
 
-   
+
     .nav-list {
         gap:1.5rem;
     }
@@ -211,6 +219,7 @@ body {
     }
 
     .navbar {
+        margin-left: 0;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -241,6 +250,12 @@ body {
         padding: .2rem;
         border-radius: 18px;
         
+    }
+
+    .aside-nav {
+        position: relative;
+        gap: 4rem;
+        display: flex;
     }
 
     .mbnav-links:hover,
@@ -502,8 +517,8 @@ section {
     }
 
     .home-img {
-        width: 500px;
-        height: 380px;
+        width: 100%;
+        height: 370px;
     }
 
     .about__img {
@@ -644,6 +659,21 @@ section {
         width: 599px;
         height: 580px;
     }
+
+    .about-image {
+        transform: translateX(1.5rem);
+    }
+
+    .about__img {
+        width: 500px;
+    }
+
+    .about-subtitle,
+    .about-pre-Subtitle
+    {
+        font-size: 1rem;
+        font-weight: var(--font-small);
+    }
 }
 
 
@@ -660,9 +690,30 @@ section {
         height: 580px;
     }
 
+    .cell-phone {
+        display: none;
+    }
+
+    .cell-phoneme {
+        display: block;
+    }
+
+    .about-image {
+        transform: translateX(6rem);
+    }
+
 }
 
 @media screen and (min-width: 930px) {
+
+    .cell-phone {
+       
+        display: block;
+    }
+
+    .cell-phoneme {
+        display: none;
+    }
 
 
     .home-container {
@@ -744,6 +795,32 @@ section {
         width: 550px;
         height: 540px;
     }
+
+    .about-container {
+        flex-direction: row;
+    }
+
+    .about-break {
+        display: block;
+    }
+
+    .about-image {
+        transform: translateX(0);
+    }
+
+    .about-title {
+        font-size: 3rem;
+    }
+
+    .about-title,
+    .about-subtitle,
+    .about-pre-Subtitle
+    {
+        justify-content: start;
+        align-items: start;
+        text-align: start;
+    }
+
 
 }
 @media screen and (min-width: 1100px) {
@@ -849,7 +926,7 @@ section {
           
     }
 
-    .about-break{
+    .about-break {
         display: block;
     }
     
