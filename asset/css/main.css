@@ -65,6 +65,7 @@
     transition: .5s ease;
     text-decoration: none;
     list-style: none;
+    font-family: var(--poppins-font);
 }
 
 body {
