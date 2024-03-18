@@ -10,6 +10,8 @@
     --nav-bg-color:#f0f0f0;
     --layout-bg-color:#0d4512;
     --button-text-color:#fff;
+    --service-bg-color:#0d4512;
+    --service-text-color:#fff;
 
 
     /* FONTS, FONT-SIZES, FONT-WEIGHTS AND TYPOGRAPHHY */
@@ -41,6 +43,20 @@
     --button-text-color:#0d4512;
 }
 
+.letDark-theme-toggle .services__service-item{
+    --service-bg-color:#000;
+}
+/* 
+.letDark-theme-toggle .services__service-text-title
+{
+    --service-text-color:#085c11;
+}
+
+.letDark-theme-toggle .services__service-text-subtitle 
+{
+    --service-text-color:#085c11;
+}
+ */
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -471,6 +487,89 @@ section {
     font-family: var(--poppins-font);
 }
 
+/* Services Style */
+
+.service-container {
+    padding: var(--pt-0-2);
+}
+
+.service-heading {
+    text-align: center;
+    padding: var(--pt-0-2);
+}
+
+.service-title,
+.service-subtitle
+{
+    color: var(--text-color);
+    font-family: var(--poppins-font);
+}
+
+.service-title {
+    font-size: 4rem;
+    font-weight: var(--font-bold);
+}
+
+.service-subtitle {
+    font-size: 0.9rem;
+    font-weight: var(--font-bold);
+}
+
+.services__service {
+    grid-template-columns: repeat(3, 2.5fr);
+    gap: 3rem;
+    justify-self: center;
+}
+
+.services__service-item {
+    background-color:var(--service-bg-color);
+    width: 300px;
+    height: max-content;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 30px;
+}
+
+.services-service_img {
+    padding: var(--p-img);
+    text-align: center;
+}
+
+.service-image {
+    width: 120px;
+    height: 110px;
+    
+}
+
+.services__service-text {
+    padding: .5rem;
+}
+
+.services__service-text-title,
+.services__service-text-subtitle 
+{
+    color: var(--service-text-color);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.services__service-text-title {
+    font-weight: var(--font-regular);
+    font-family: var(--poppins-font);
+    font-size: 1.5rem;
+}
+
+.services__service-text-subtitle  {
+    margin-top: 1rem;
+    font-size: 0.68rem;
+    font-family: var(--poppins-font);
+    font-weight: var(--font-small);
+    width: 100%;
+}
+
+
+
 
 /*BREAKPOINTS START!*/
 @media screen and (max-width: 380px) {
@@ -555,7 +654,30 @@ section {
         align-items: center;
     }
 
-    
+    .service-heading {
+        padding: 0;
+    }
+
+    .service-title {
+        font-size: 1.6rem;
+    }
+
+    .service-subtitle {
+        font-size: 0.7rem;
+        font-weight: var(--font-regular);
+    }
+
+    .services__service {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .services__service-item {
+        width: 280px;
+        height: max-content;
+        
+    }
 }
 
 @media screen and (min-width: 380px) {
@@ -639,6 +761,31 @@ section {
         align-items: center;
     }
 
+    .service-heading {
+        padding: 0;
+    }
+
+    .service-title {
+        font-size: 1.6rem;
+    }
+
+    .service-subtitle {
+        font-size: 0.7rem;
+        font-weight: var(--font-regular);
+    }
+
+    .services__service {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .services__service-item {
+        width: 280px;
+        height: max-content;
+        
+    }
+
 }
 
 @media screen and (min-width: 480px) {
@@ -646,6 +793,18 @@ section {
     .home-title {
         font-size: 2rem;
         font-weight: var(--font-regular);
+    }
+
+    .service-title {
+        font-size: 2rem;
+    }
+
+    .service-subtitle {
+        font-size:1rem;
+    }
+
+    .services__service-item {
+        width: 300px;
     }
 }
 @media screen and (min-width: 600px) {
@@ -700,6 +859,10 @@ section {
 
     .about-image {
         transform: translateX(6rem);
+    }
+
+    .services__service {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
@@ -819,6 +982,19 @@ section {
         justify-content: start;
         align-items: start;
         text-align: start;
+    }
+
+
+    .service-title {
+        font-size: 4rem;
+    }
+
+    .service-subtitle {
+        font-size:1rem;
+    }
+
+    .services__service-item {
+        width: 330px;
     }
 
 
@@ -971,6 +1147,19 @@ section {
         font-weight: var(--font-small);
         font-family: var(--poppins-font);
     }
+
+    .services__service {
+        grid-template-columns: repeat(3, 2fr);
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+
+    .services__service-item {
+        width: 300px;
+        height: max-content;
+        
+    }
+
     
 
 }
