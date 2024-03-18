@@ -298,9 +298,6 @@ body {
         height: max-content;
         width: max-content;
         padding: 3.5% 5%;
-        justify-content: center !important;
-        align-items: center !important;
-        text-align: center !important;
         right: 0;
         left: 0;
         justify-self: center !important;
