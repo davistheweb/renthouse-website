@@ -411,7 +411,7 @@ section {
 
 .about-container {
     gap: 2rem;
-    row-gap: 2em;
+   /*  row-gap: 2em; */
 }
 
 .about-intro {
@@ -590,11 +590,11 @@ section {
         height: 380px;
     }
 
-    .about__img {
+   /*  .about__img {
         width: 100%;
         height: 300px;
     }
-
+ */
     .about-break {
         display: none;
     }
@@ -828,11 +828,11 @@ section {
         height: 540px;
     }
 
-
+/* 
     .about__img {
         width: 500px;
         height: 390px;
-    }
+    } */
     
     .about-container {
         gap: 2rem;
@@ -856,7 +856,7 @@ section {
     .about-title {
         font-size: 4rem;
         font-weight: var(--font-bold);
-        font-family: var(--poppins-font) !important;
+        font-family: var(--poppins-font);
         color: var(--text-color);
         justify-content: start;
         text-align: start;
