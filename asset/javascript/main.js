@@ -49,16 +49,16 @@ if (navigator.connection) {
 
 /* SHOW HEADER BOX SHADOW*/
     
- /*    function headerScroll(){
+     function headerScroll(){
         
         const header = document.querySelector('.header');
-        header = (this.scrollY >= 50)? document.body.classList.add('show-header-box')
+        onscroll = (this.scrollY >= 50)? document.body.classList.add('show-header-box')
         : document.body.classList.remove('show-header-box');
     }
 
-    window.onscroll = headerScroll;
+    window.addEventListener('scroll', headerScroll);
 
-  */
+  
 
     // NAVIGATION BAR! */
 
