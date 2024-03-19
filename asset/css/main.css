@@ -598,14 +598,10 @@ section {
     margin-top: 1rem;
 }
 
-.review-slide {
-    max-width: 1200px;
-    width: 100%;
-    background-color: black;
-}
-
-.review-item {
+.reviews-item {
     padding: var(--pt-0-2);
+    gap: 2rem;
+    grid-template-columns: repeat(3, 3fr);
 }
 
 .review__item {
@@ -752,6 +748,33 @@ section {
         height: max-content;
         
     }
+
+    review-br {
+        display: none;
+    }
+
+    .review-title {
+        font-size: 1.5rem;
+    }
+
+    .reviews-item {
+        grid-template-columns: repeat(1,2fr);
+    }
+
+    .review__item {
+        width: 320px;
+    }
+
+    .review-item-title {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .review__item {
+        width: 300px;
+    }
 }
 
 @media screen and (min-width: 380px) {
@@ -860,6 +883,26 @@ section {
         
     }
 
+    review-br {
+        display: none;
+    }
+
+    .review-title {
+        font-size: 1.5rem;
+    }
+
+    .reviews-item {
+        grid-template-columns: repeat(1,2fr);
+    }
+
+    .review__item {
+        width: 350px;
+    }
+
+    .review-item-title {
+        font-size: 1rem;
+    }
+
 }
 
 @media screen and (min-width: 480px) {
@@ -879,6 +922,10 @@ section {
 
     .services__service-item {
         width: 300px;
+    }
+
+    .review__item {
+        width: 380px;
     }
 }
 @media screen and (min-width: 600px) {
@@ -906,6 +953,23 @@ section {
     {
         font-size: 1rem;
         font-weight: var(--font-small);
+    }
+
+    .review-title {
+        font-size: 2rem;
+    }
+    
+    .review-subtitle {
+        font-size: 1rem;
+    }
+
+    .review__item {
+        width: 380px;
+        justify-self: center;
+    }
+
+    .review-item-title {
+        font-size: 1.2rem;
     }
 }
 
@@ -937,6 +1001,16 @@ section {
 
     .services__service {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reviews-item {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+
+    .review__item {
+        width: 320px;
     }
 
 }
@@ -1071,6 +1145,14 @@ section {
         width: 330px;
     }
 
+ 
+    .review-title {
+        font-size: 3.5rem;
+    }
+
+    .review-item-title {
+        font-size: 1.4rem;
+    }
 
 }
 @media screen and (min-width: 1100px) {
@@ -1232,6 +1314,19 @@ section {
         width: 300px;
         height: max-content;
         
+    }
+
+    .review-br {
+        display: block;
+    }
+
+    .reviews-item {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .review__item {
+        width: 320px;
     }
 
     
