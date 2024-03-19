@@ -11,7 +11,29 @@ const getTitle = document.title
     window.addEventListener('focus', () =>{
         document.title = getTitle
         console.log("Tab is on focus")
+    });
+
+    /* ACTIVE MENU */
+
+    const sections = document.querySelectorAll('section'),
+        navLists = document.querySelectorAll('header .nav-list a')
+
+window.onscroll = () => {
+    sections.forEach(sect => {
+        const top = window.screenY;
+        const offset = sec.offsetTop;
+        const height = sec.offsetHeight;
+        const id = sec.getAttribute('id');
+
+        if (top >= offset && top < offset + height) {
+            navLists.forEach(links => {
+                links.classList.remove('active');
+            });
+
+            document.querySelectorAll('header .navlist a[href*=' + id +']').classList.add('active')
+        }
     })
+}
 
     // PRELOADER JAVASCRIPT!
 
