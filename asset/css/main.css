@@ -281,6 +281,7 @@ body {
         display: flex;
         padding: .2rem;
         border-radius: 18px;
+        color: #000;
         
     }
 
@@ -340,7 +341,7 @@ body {
 }
 
 @media screen and (max-width: 580px) {
-    .navbar {
+    .header .navbar {
         position: fixed !important;
         height: max-content;
         width: max-content;
@@ -348,6 +349,7 @@ body {
         right: 0;
         left: 0;
         justify-self: center !important;
+        text-align: center;
         bottom: 1%;
         display: flex !important;
         visibility: visible;
