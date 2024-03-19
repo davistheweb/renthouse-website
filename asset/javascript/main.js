@@ -99,6 +99,18 @@ if (navigator.connection) {
             document.body.classList.toggle("change-theme-icon");
         });
     
+
+
+        /* BUILDER LIINK */
+        
+        const myLink = document.querySelector(".builder-social")
+        function myTwitter() {
+            myLink.addEventListener('click', () => {
+            window.location.href = 'https://twitter.com/davistheweb'
+            })
+        }
+
+        myTwitter()
     
 
        /*  const swiper = new Swiper('.swiper', {

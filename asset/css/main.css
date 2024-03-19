@@ -13,8 +13,9 @@
     --service-bg-color:#0d4512;
     --service-text-color:#fff;
     --review-border-color:#0d4512;
-
-
+    --social-bg-color:#0d4215;
+    --social-text-color:#fff;
+    --main-link-text-color:#fff;
     /* FONTS, FONT-SIZES, FONT-WEIGHTS AND TYPOGRAPHHY */
     /*FONTS*/
 
@@ -50,6 +51,15 @@
 
 .letDark-theme-toggle .review__item {
     --review-border-color:#fff;
+}
+
+.letDark-theme-toggle .dev-social-link:hover {
+    --social-bg-color:#fff;
+    --social-text-color:#085c11;
+}
+
+.letDark-theme-toggle .main-link {
+    --main-link-text-color:#085c11;
 }
 /* 
 .letDark-theme-toggle .services__service-text-title
@@ -703,7 +713,52 @@ section {
     color: var(--text-color);
 }
 
+.footer-end {
+    margin-top: 2rem;
+    grid-template-columns: repeat(2, 0.7fr);
+}
 
+.dev-socials {
+    gap: 1rem;
+}
+
+.main-link {
+    background-color: var(--layout-bg-color);
+    color: var(--main-link-text-color) !important;
+}
+
+.dev-social-link {
+    font-weight: var(--font-bold);
+    width: max-content;
+    height: max-content;
+    border: 1px solid var(--layout-bg-color);
+    padding: .5rem;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.dev-social-link:hover {
+    transform: translateY(-5px);
+    background-color: var(--social-bg-color);
+    color: var(--social-text-color);
+}
+
+.copyright {
+    padding: .1rem;
+}
+
+.copyright-title {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    font-weight: var(--font-regular);
+}
+
+.builder-social {
+    font-weight: var(--font-smaller);
+    cursor: pointer;
+}
 
 
 /*BREAKPOINTS START!*/
@@ -839,6 +894,19 @@ section {
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
         row-gap: 2em;
+    }
+
+    .footer-end {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .copyright {
+        margin-top: 1rem;
+    }
+
+    .copyright-title {
+        font-size: 0.7rem;
+        font-weight: var(--font-smaller);
     }
 }
 
@@ -982,6 +1050,18 @@ section {
         row-gap: 2em;
     }
 
+    .footer-end {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .copyright {
+        margin-top: 1rem;
+    }
+
+    .copyright-title {
+        font-size: 0.7rem;
+        font-weight: var(--font-smaller);
+    }
 }
 
 @media screen and (min-width: 480px) {
