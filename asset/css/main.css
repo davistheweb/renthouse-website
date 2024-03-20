@@ -181,6 +181,7 @@ body {
 #theme-icon
 {
     position: relative;
+    
 }
 
 
@@ -190,9 +191,10 @@ body {
     position: absolute;
     width: max-content;
     height: max-content;
-    border: 1px solid #000;
+    border: 1px solid var(--text-color);
     border-radius: 15px;
     cursor: pointer;
+    color: var(--text-color);
 }
 
 .toogle__light {
@@ -204,6 +206,7 @@ body {
     opacity: 1;
     visibility: visible;
     transform: rotate(-70deg);
+    
 }
 
 
