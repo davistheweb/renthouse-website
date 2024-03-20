@@ -16,6 +16,8 @@
     --social-bg-color:#0d4215;
     --social-text-color:#fff;
     --main-link-text-color:#fff;
+    --scrollbar-bg:#0d4512;
+    --scrollbar-button-bg:#fff;
     /* FONTS, FONT-SIZES, FONT-WEIGHTS AND TYPOGRAPHHY */
     /*FONTS*/
 
@@ -72,6 +74,25 @@
     --service-text-color:#085c11;
 }
  */
+
+.letDark-theme-toggle::-webkit-scrollbar {
+    --scrollbar-bg:#fff;
+}
+
+.letDark-theme-toggle::-webkit-scrollbar-thumb {
+    --scrollbar-button-bg:#0d4512;
+}
+
+::-webkit-scrollbar {
+    width: .8rem;
+    background-color: var(--scrollbar-bg);
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-button-bg);
+    border-radius: 0.5rem;
+}
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -375,6 +396,7 @@ body {
         display: flex !important;
         visibility: visible;
         opacity: 2;
+        bottom: 2%;
     }
 
     .nav-list {
