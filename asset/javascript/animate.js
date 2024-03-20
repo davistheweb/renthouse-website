@@ -16,9 +16,9 @@ home.from(".home-intro .home__buttons", {
 
 ScrollReveal({ 
     origin:'top',
-    distance:'80px',
+    distance:'90px',
     duration:1800,
-    delay:200,
+    delay:160,
     reset:'true',
   });
 
