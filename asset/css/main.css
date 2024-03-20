@@ -360,7 +360,7 @@ body {
         text-align: center;
         justify-items: center;
         bottom: 1%;
-        display: grid !important;
+        display: flex !important;
         visibility: visible;
         opacity: 2;
     }
