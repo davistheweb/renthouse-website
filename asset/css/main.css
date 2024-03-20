@@ -361,7 +361,6 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 1.25rem;
         transition: .4s;
     }
 
@@ -373,7 +372,6 @@ body {
         justify-self: center !important;
         text-align: center;
         justify-items: center;
-        bottom: 1%;
         display: flex !important;
         visibility: visible;
         opacity: 2;
@@ -680,7 +678,7 @@ section {
 
 .footer {
     padding: var(--pt-0-2);
-    padding-bottom: 3rem;
+    padding-bottom: 10rem;
 }
 
 .footer-container {

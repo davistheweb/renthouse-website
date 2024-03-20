@@ -105,16 +105,10 @@ if (navigator.connection) {
 
     openIcon.addEventListener('click', () => {
         document.body.classList.toggle('open-icon')
-    })
+    });
 
 
-/*     const closeNav = document.querySelectorAll('.nav-links')
 
-    close.foreach(link => {
-        link.addEventListener('click', () => {
-            document.body.classList.remove('open')
-        })
-    }) */
 
 
     /* THEME TOGGLE */
