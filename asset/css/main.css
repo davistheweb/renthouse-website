@@ -345,13 +345,24 @@ body {
 
 @media screen and (max-width: 580px) {
 
+    .nav__menu {
+        position: fixed;
+        bottom: 2rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1.25rem;
+        transition: .4s;
+    }
+
    body .header .navbar {
-        position: fixed !important;
+      
         height: max-content;
         width: max-content;
         padding: 3.5% 5%;
-        right: 0;
-        left: 0;
         justify-self: center !important;
         text-align: center;
         justify-items: center;
@@ -1529,4 +1540,11 @@ section {
         font-weight: var(--font-bold);
     }
 
+}
+
+
+@media screen and (min-width: 2000px) {
+    body {
+        zoom:1.5;
+    }
 }
