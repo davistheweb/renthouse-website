@@ -344,7 +344,11 @@ body {
 }
 
 @media screen and (max-width: 580px) {
-    .header .navbar {
+
+    .header {
+        justify-items: center;
+    }
+   body .header .navbar {
         position: fixed !important;
         height: max-content;
         width: max-content;
@@ -353,6 +357,7 @@ body {
         left: 0;
         justify-self: center !important;
         text-align: center;
+        justify-items: center;
         bottom: 1%;
         display: flex !important;
         visibility: visible;

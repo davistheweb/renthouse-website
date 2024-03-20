@@ -1,10 +1,41 @@
-gsap.from('.header', {duration: 1, y : '-100%'})
 
-gsap.to(
-    '.home-image', {duration:2, x:20,}
-)
+/* 
+const home = gsap.timeline()
 
-gsap.from('.home-intro', {
-    duration:2,
-    ease:"bounce.out"
+
+home.from('.home-intro .home-title', {
+    y:100,
+    opacity:0,
+    stagger:0.2
+})
+
+home.from(".home-intro .home__buttons", {
+    x: -100,
+    opacity:0
+}) */
+
+ScrollReveal({ 
+    origin:'top',
+    distance:'80px',
+    duration:1800,
+    delay:200,
+    reset:'true',
+  });
+
+ScrollReveal().reveal('.home-intro, .left-element',
+{
+     origin:'left'
+    });
+ScrollReveal().reveal('.home-image, .right-element', 
+{ 
+    origin:'right'
+});
+ScrollReveal().reveal('.about-container, .top-element', 
+{ 
+    origin: 'top'
+})
+
+ScrollReveal().reveal('.services__service, .bottom-element', 
+{ 
+    origin: 'bottom' 
 })
