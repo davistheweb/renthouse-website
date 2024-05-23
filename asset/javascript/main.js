@@ -63,8 +63,10 @@ function hideLoader() {
     loader.style.display = "none";
 }
 
+window.addEventListener('load', hideLoader())
+
 // Check if the navigator.connection API is supported
-if (navigator.connection) {
+/* if (navigator.connection) {
     const connection = navigator.connection;
 
     // Check the type of network connection
@@ -79,7 +81,7 @@ if (navigator.connection) {
     // If navigator.connection API is not supported, use default timeout
     setTimeout(hideLoader, 2600);
 }
-
+ */
 
 /* SHOW HEADER BOX SHADOW*/
     
