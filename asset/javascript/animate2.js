@@ -1318,7 +1318,6 @@ ScrollReveal({
     distance:'90px',
     duration:1800,
     delay:160,
-    reset:'true',
   });
 
 ScrollReveal().reveal('.home-intro, .left-element',
