@@ -115,21 +115,40 @@ window.addEventListener('load', hideLoader())
 
     /* THEME TOGGLE */
 
-    
+    const themeChanges = ()=> {
 
-    const themeToggle = document.getElementById('theme-toggle'),
-            themeIcon = document.getElementById('theme-icon');
+        const themeToggle = document.getElementById('theme-toggle'),
+        themeIcon = document.getElementById('theme-icon');
 
-   
+
         themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle("letDark-theme-toggle");
+         const themeIsToggled = document.body.classList.toggle("letDark-theme-toggle");
+         localStorage.setItem('isdark', themeIsToggled)
         });
 
         themeIcon.addEventListener('click', () => {
-            document.body.classList.toggle("change-theme-icon");
+        const themeIconIsToggled = document.body.classList.toggle("change-theme-icon");
+        localStorage.setItem('themeicon', themeIconIsToggled)
         });
-    
 
+        const setDarkTheme = (darkTheme, themeIconToggled) =>{
+            if(darkTheme && themeIconToggled){
+                document.body.classList.add('letDark-theme-toggle');
+                document.body.classList.toggle("change-theme-icon");
+            }
+            else{
+                document.body.classList.remove('letDark-theme-toggle');
+                document.body.classList.remove("change-theme-icon");
+            }
+            
+        } 
+        const verifyDarkTheme = localStorage.getItem('isdark') === 'true';
+        const verifyIconToggle = localStorage.getItem('themeicon') === 'true';
+        setDarkTheme(verifyDarkTheme, verifyIconToggle);
+
+    }
+
+    themeChanges()
 
         /* BUILDER LIINK */
         
