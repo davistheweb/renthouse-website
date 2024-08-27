@@ -143,6 +143,15 @@ body {
     
 }
 
+.main-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color);
+}
+.wrapFull{
+    max-width: 1440px;
+}
 .show-header-box .header {
     box-shadow: var(--bg-scroll-color);
 }
